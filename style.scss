@@ -1,0 +1,125 @@
+/*    fonts used :
+    
+font-family: "Poppins", sans-serif;
+font-family: "Nova Script", cursive;
+font-family: "Slabo 27px", serif;    
+
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #000;
+   font-family: "Poppins", sans-serif;
+   user-select: none;
+}
+
+#canvas {
+   background-color: #000;
+   position: fixed;
+   filter: blur(2px);
+}
+
+#score {
+   position: fixed;
+   color: coral;
+   z-index: 3;
+   font-size: 20px;
+   left: 1vw;
+   margin-top: 1vw;
+   padding: 6px;
+   background-color: gray;
+   text-transform: uppercase;
+   font-family: monospace;
+}
+
+#info {
+   position: fixed;
+   width: 90%;
+   max-width: 580px;
+   height: 95%;
+   max-height: 700px;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   background-color: rgba(25, 25, 25, 0.9);
+   z-index: 4;
+   padding: 15px;
+   color: white;
+   transition: 250ms;
+   user-select: auto;
+}
+header,
+#end {
+   height: 45px;
+   width: 100%;
+   border-bottom: 2px solid #efefef;
+   margin-bottom: 10px;
+   text-align: center;
+   color: coral;
+   font-family: "Nova Script", cursive;
+}
+i {
+   margin-left: 10px;
+   color: white;
+}
+section {
+   position: relative;
+   height: calc(100% - 90px);
+   width: 100%;
+   overflow-y: scroll;
+}
+p {
+   width: 100%;
+   padding: 4px 4px 4px 15px;
+}
+section > span {
+   color: coral;
+   font-size: 21px;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-family: "Slabo 27px", serif;
+}
+#end {
+   border: none;
+}
+button {
+   outline: none;
+   border: none;
+   height: 38px;
+   color: white;
+   width: 100px;
+   background-color: coral;
+   border-radius: 3px;
+   margin-top: 6px;
+   font-weight: bolder;
+   font-size: 16px;
+   font-family: "Slabo 27px", serif;
+}
+button:active {
+   transform: scale(0.9);
+}
+#icon {
+   position: fixed;
+   font-size: 14px;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   background-color: transparent;
+   border: 2px solid coral;
+   color: coral;
+   z-index: 3;
+   right: 1vw;
+   top: 1vw;
+   font-weight: bolder;
+}
+a {
+   color: coral;
+   text-decoration: none;
+}

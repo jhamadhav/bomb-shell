@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         href="https://fonts.googleapis.com/css?family=Nova+Script|PT+Sans|Poppins|Slabo+27px"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+         crossorigin="anonymous"
+      />
+      <title>bomb shell</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="particle.js"></script>
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <button id="icon" onclick="infoShow()">i</button>
+      <div id="info">
+         <header>
+            <h2>Bomb shell <i class="fas fa-bomb"></i></h2>
+         </header>
+
+         <section>
+            <span>Instructions : </span>
+            <p>
+               1. Click anywhere on the screen to initiate the game<i
+                  >( well kind of a game )</i
+               >. <br /><br />
+               2. The aim is to get a spot that can get maximum number of the
+               flying projectiles. <br /><br />
+               3. To make sure that the experience is same across all size of
+               screens, the maximum number of projectiles may vary !
+               <br /><br />
+
+               4. To restart the game when all the bomb shell disappears,
+               <i>Click on the screen .</i>
+            </p>
+            <br />
+            <span>About : </span>
+            <p>
+               I am/was on a little break and thus it is kind of a returning
+               code 😊👍 <br /><br />
+               I saw a similar art work on codepen a while ago, so if you could
+               find that code then please comment in the link. I will surely
+               credit the author.
+            </p>
+            <br />
+            <span id="fps">FPS : 00</span><br /><br />
+            <span>Updates :</span>
+            <p>
+               <b>Date : 13-6-2019</b> <br />
+               Score system changed to percentage to make fair for every one.
+               <br />
+               Courtesy of this idea to an amazing friend
+               <a href="https://www.sololearn.com/Profile/10779261/?ref=app"
+                  >Ashutosh</a
+               >
+               .
+            </p>
+         </section>
+         <div id="end">
+            <button id="done" onclick="infoHide()">Done</button>
+         </div>
+      </div>
+      <div id="score">Score Card</div>
+      <canvas id="canvas"></canvas>
+   </body>
+</html>
